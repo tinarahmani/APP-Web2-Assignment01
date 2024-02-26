@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment01</title>
+    <link rel="stylesheet" href="styles.css" type="text/css"> 
+</head>
+<body>
+    <main>
+        <h1>Photo Gallery</h1>
+        <div class="row">
+            <div class="image">
+                <img id="baby1" src="pic1.jpg" alt="Sleepy Baby">
+            </div>
+            <div class="image">
+                <img id="baby2" src="pic2.jpeg" alt="Indian Baby">
+            </div>
+            <div class="image">
+                <img id="baby3" src="pic3.jpg" alt="Happy Baby">
+            </div>
+            <div class="image">
+                <img id="baby4" src="pic4.jpg" alt="Twin">
+            </div>
+        </div>
+        <div class="row2">
+            <img id="main-img" src="pic1.jpg" alt="sleepy-baby">
+            <p class="name">Sleepy Baby</p>
+        </div>
+    </main> 
+    <script>
+       console.log("testing")
+       console.log(document.querySelector("#baby1"))
+       document.querySelector("#baby1").onclick = function () {
+           document.querySelector("#main-img").src = "pic1.jpg";
+           document.querySelector("#main-img").alt = "Sleepy Baby";
+           document.querySelector(".name").innerHTML = "Sleepy Baby"; 
+       }
+       console.log(document.querySelector("#baby2"))
+       document.querySelector("#baby2").onclick = function () {
+           document.querySelector("#main-img").src = "pic2.jpeg";
+           document.querySelector("#main-img").alt = "Indian Baby";
+           document.querySelector(".name").innerHTML = "Indian Baby";
+
+       }
+       console.log(document.querySelector("#baby3"))
+       document.querySelector("#baby3").onclick = function () {
+           document.querySelector("#main-img").src = "pic3.jpg";
+           document.querySelector("#main-img").alt = "Happy Baby";
+           document.querySelector(".name").innerHTML = "Happy Baby";
+       }
+       console.log(document.querySelector("#baby4"))
+       document.querySelector("#baby4").onclick = function () {
+           document.querySelector("#main-img").src = "pic4.jpg";
+           document.querySelector("#main-img").alt = "Twin";
+           document.querySelector(".name").innerHTML = "Twin";
+       }
+    </script>   
+</body>
+</html>
+
+                
+                
